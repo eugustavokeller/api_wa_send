@@ -8,6 +8,12 @@ class Sender {
         this.initialize()
     }
 
+    async sendText(to: string, body: string) {
+        // this.sendText("554891893541@c.us", "Mensagem de teste")
+        
+        await this.client.sendText(to, body);
+    }
+
     private initialize() {
 
         const qr = (base64Qrimg: string) => {}

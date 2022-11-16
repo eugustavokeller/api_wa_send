@@ -1,0 +1,18 @@
+2022/11/16-18:36:47.205 10c03 Reusing MANIFEST /Users/guery/Documents/MeusProjetos/api_wa_send/tokens/api_wa_send/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/11/16-18:36:47.206 10c03 Recovering log #100
+2022/11/16-18:36:47.247 10c03 Reusing old log /Users/guery/Documents/MeusProjetos/api_wa_send/tokens/api_wa_send/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000100.log 
+2022/11/16-18:37:02.925 8c07 Compacting 1@0 + 1@1 files
+2022/11/16-18:37:03.588 8c07 Generated table #103@0: 72537 keys, 1276151 bytes
+2022/11/16-18:37:03.588 8c07 Compacted 1@0 + 1@1 files => 1276151 bytes
+2022/11/16-18:37:03.597 8c07 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/11/16-18:37:03.941 8c07 Level-0 table #105: started
+2022/11/16-18:37:04.069 8c07 Level-0 table #105: 1107017 bytes OK
+2022/11/16-18:37:04.093 8c07 Delete type=2 #101
+2022/11/16-18:37:04.094 8c07 Delete type=2 #99
+2022/11/16-18:37:04.094 8c07 Delete type=0 #100
+2022/11/16-18:37:04.943 9303 Compacting 1@0 + 1@1 files
+2022/11/16-18:37:05.243 9303 Generated table #106@0: 87638 keys, 1404907 bytes
+2022/11/16-18:37:05.243 9303 Compacted 1@0 + 1@1 files => 1404907 bytes
+2022/11/16-18:37:05.251 9303 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/11/16-18:37:05.253 9303 Delete type=2 #103
+2022/11/16-18:37:05.253 9303 Delete type=2 #105
