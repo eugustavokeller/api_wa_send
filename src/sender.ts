@@ -1,5 +1,8 @@
+import parsePhoneNumber, { isValidPhoneNumber } from "libphonenumber-js"
+import { PhoneNumber } from "libphonenumber-js"
 import { start } from "repl"
 import { create, Whatsapp, Message, SocketState } from "venom-bot"
+import { toRaw } from "vue"
 
 class Sender {
     private client: Whatsapp
@@ -9,9 +12,21 @@ class Sender {
     }
 
     async sendText(to: string, body: string) {
-        // this.sendText("554891893541@c.us", "Mensagem de teste")
+        // 554891893541@c.us
+
+        if(!isValidPhoneNumber(to, "BR")) {
+            throw new Error("this number is not valid")
+        }
+
+        let phoneNumber = parsePhoneNumber(to, "BR")
+            ?.format("E.164")
+            ?.replace("+", "") as string
+
+        phoneNumber = phoneNumber.includes("@c.us") 
+            ? phoneNumber 
+            : `${phoneNumber}@c.us`
         
-        await this.client.sendText(to, body);
+        await this.client.sendText(phoneNumber, body);
     }
 
     private initialize() {

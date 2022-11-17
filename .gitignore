@@ -125,4 +125,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-./tokens
+tokens/
+tokens/api_wa_send/Default/Session Storage/LOG
+tokens/api_wa_send/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/index.txt
+tokens/api_wa_send/Default/Service Worker/Database/CURRENT
